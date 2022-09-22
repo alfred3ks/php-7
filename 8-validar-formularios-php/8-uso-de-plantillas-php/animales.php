@@ -12,19 +12,23 @@
     $animal = $_GET['animal'];
 
     if ($animal == 1) {
-      $titulo = "Soy un Perro";
+      $titulo = "Perro";
+      $mensaje = "Guau guau..";
       $imagen = "perro.png";
     }
     if ($animal == 2) {
-      $titulo = "Soy un Gato";
+      $titulo = "Gato";
+      $mensaje = "Miuuuu...";
       $imagen = "gato.png";
     }
     if ($animal == 3) {
-      $titulo = "Soy un Gallo";
+      $titulo = "Gallo";
+      $mensaje = "Kikiriki...";
       $imagen = "gallo.png";
     }
     if ($animal == 4) {
-      $titulo = "Soy un Aguila";
+      $titulo = "Águila";
+      $mensaje = "Ziuzzzz...";
       $imagen = "aguila.png";
     }
   }
@@ -33,7 +37,7 @@
 </head>
 
 <body>
-  <h1>Soy un <?php echo $titulo; ?></h1>
+  <h1>Soy un <?php echo $titulo . " " . $mensaje; ?></h1>
   <img src="<?php echo 'img/' . $imagen ?>" alt="<?php echo $titulo ?>">
 </body>
 
